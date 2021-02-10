@@ -41,6 +41,6 @@ pipeline {
 
 ### Important Note
 
-It is critical that the `.cloudenv-secret-key` file in the home directory of your application (which you get by running `cloudenv init` or from someone else on your team who has already run `cloudenv init`) is still in the home directory of your application inside your Docker container. That secret key can not be put into an environmental variable and should also never be checked into any source code repository.
+It is critical that the `.cloudenv-secret-key` file in the home directory of your application (which you get by running `cloudenv init` or from someone else on your team who has already run `cloudenv init`) is still in the home directory of your application inside your CI/CD pipeline. That secret key can not be put into an environmental variable and should also never be checked into any source code repository.
 
 That file contains your encryption key and without it, your application can not decrypt the data received from CloudEnv's servers.
