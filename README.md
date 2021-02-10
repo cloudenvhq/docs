@@ -27,7 +27,7 @@ $                                       #   they are encrypted and uploaded to C
 $                                       #   and instantly distributed to other team members and environments
 ```
 
-### Node CloudEnv
+### CloudEnv Node Integration
 
 ```console
 $ npm install cloudenv-hq --save
@@ -41,7 +41,7 @@ process.env.AWS_SECRET_ACCESS_KEY
 
 [Read More](pages/installation/node.html) about how to use CloudEnv with Node.
 
-### Ruby CloudEnv
+### CloudEnv Ruby Integration
 
 ```console
 $ gem install cloudenv-hq
@@ -56,7 +56,7 @@ ENV.fetch("AWS_SECRET_ACCESS_KEY")
 
 [Read More](pages/installation/ruby.html) about how to use CloudEnv with Ruby.
 
-### Python CloudEnv
+### CloudEnv Python Integration
 
 ```console
 $ pip install cloudenv
