@@ -39,7 +39,7 @@ require("cloudenv-hq")
 process.env.AWS_SECRET_ACCESS_KEY
 ```
 
-[Read More](installation/node.html) about how to use CloudEnv with Node.
+[Read More](pages/installation/node.html) about how to use CloudEnv with Node.
 
 ### Ruby CloudEnv
 
@@ -54,7 +54,7 @@ require "cloudenv-hq"
 ENV.fetch("AWS_SECRET_ACCESS_KEY")
 ```
 
-[Read More](installation/ruby.html) about how to use CloudEnv with Ruby.
+[Read More](pages/installation/ruby.html) about how to use CloudEnv with Ruby.
 
 ### Python CloudEnv
 
@@ -70,13 +70,13 @@ cloudenv.load_cloudenv()
 os.getenv("AWS_SECRET_ACCESS_KEY")
 ```
 
-[Read More](installation/python.html) about how to use CloudEnv with Python.
+[Read More](pages/installation/python.html) about how to use CloudEnv with Python.
 
 ### Using CloudEnv to Manage Your Console Secrets
 
 You can use CloudEnv to store and manage your local environmental variables, not just your application variables. All you have to do is run `cloudenv init` inside your home directory and add `cloudenv show` to the source step in your shell profile.
 
-[Read More](tutorials/console.html) about how to use CloudEnv with your console.
+[Read More](pages/tutorials/console.html) about how to use CloudEnv with your console.
 
 ```console
 $ cd ~
