@@ -22,7 +22,7 @@ pipeline {
         // Define agent details here
     }
     environment {
-        CLOUDENV_BEARER_TOKEN     = '.... Token generated from https://app.cloudenv.com/api_tokens ....'
+        CLOUDENV_BEARER_TOKEN = '... Token generated from https://app.cloudenv.com/api_tokens ...'
     }
     stages {
         stage('Example stage 1') {
