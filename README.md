@@ -2,7 +2,7 @@
 layout: default
 title: Welcome to CloudEnv
 nav_order: 1
-permalink: docs/
+permalink: /
 ---
 
 ## Welcome to CloudEnv

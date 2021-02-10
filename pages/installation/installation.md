@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Installation
-nav_order: 2
+nav_order: 3
 has_children: true
-permalink: docs/installation
+permalink: /installation
 ---
 
 # Installation
+

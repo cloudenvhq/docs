@@ -2,14 +2,14 @@
     "doc": "Welcome to CloudEnv",
     "title": "Welcome to CloudEnv",
     "content": "Encrypted Secrets Management . Markdown . Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for . Syntax highlighted code block # Header 1 ## Header 2 ### Header 3 - Bulleted - List 1. Numbered 2. List **Bold** and _Italic_ and `Code` text [Link](url) and ![Image](src) . For more details see GitHub Flavored Markdown. Jekyll Themes . Your Pages site will use the layout and styles from the Jekyll theme you have selected in your repository settings. The name of this theme is saved in the Jekyll _config.yml configuration file. Support or Contact . Having trouble with Pages? Check out our documentation or contact support and we’ll help you sort it out. ",
-    "url": "http://localhost:4000/docs/",
-    "relUrl": "/docs/"
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
   },"1": {
     "doc": "API",
     "title": "API",
     "content": " ",
-    "url": "http://localhost:4000/docs/api",
-    "relUrl": "/docs/api"
+    "url": "http://localhost:4000/api",
+    "relUrl": "/api"
   },"2": {
     "doc": "Bearer Token Authentication",
     "title": "Bearer Token Authentication",
@@ -74,8 +74,8 @@
     "doc": "Installation",
     "title": "Installation",
     "content": " ",
-    "url": "http://localhost:4000/docs/installation",
-    "relUrl": "/docs/installation"
+    "url": "http://localhost:4000/installation",
+    "relUrl": "/installation"
   },"13": {
     "doc": "CloudEnv Node",
     "title": "CloudEnv Node",
@@ -86,8 +86,8 @@
     "doc": "Overview",
     "title": "Overview",
     "content": " ",
-    "url": "http://localhost:4000/docs/overview",
-    "relUrl": "/docs/overview"
+    "url": "http://localhost:4000/overview",
+    "relUrl": "/overview"
   },"15": {
     "doc": "API Permission Management",
     "title": "API Permission Management",
@@ -110,7 +110,7 @@
     "doc": "Tutorials",
     "title": "Tutorials",
     "content": " ",
-    "url": "http://localhost:4000/docs/tutorials",
-    "relUrl": "/docs/tutorials"
+    "url": "http://localhost:4000/tutorials",
+    "relUrl": "/tutorials"
   }
 }
