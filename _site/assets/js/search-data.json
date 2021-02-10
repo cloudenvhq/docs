@@ -1,0 +1,116 @@
+{"0": {
+    "doc": "Welcome to CloudEnv",
+    "title": "Welcome to CloudEnv",
+    "content": "Encrypted Secrets Management . Markdown . Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for . Syntax highlighted code block # Header 1 ## Header 2 ### Header 3 - Bulleted - List 1. Numbered 2. List **Bold** and _Italic_ and `Code` text [Link](url) and ![Image](src) . For more details see GitHub Flavored Markdown. Jekyll Themes . Your Pages site will use the layout and styles from the Jekyll theme you have selected in your repository settings. The name of this theme is saved in the Jekyll _config.yml configuration file. Support or Contact . Having trouble with Pages? Check out our documentation or contact support and we’ll help you sort it out. ",
+    "url": "http://localhost:4000/docs/",
+    "relUrl": "/docs/"
+  },"1": {
+    "doc": "API",
+    "title": "API",
+    "content": " ",
+    "url": "http://localhost:4000/docs/api",
+    "relUrl": "/docs/api"
+  },"2": {
+    "doc": "Bearer Token Authentication",
+    "title": "Bearer Token Authentication",
+    "content": " ",
+    "url": "http://localhost:4000/pages/api/bearer-token.html",
+    "relUrl": "/pages/api/bearer-token.html"
+  },"3": {
+    "doc": "Configuring CloudEnv For CI/CD",
+    "title": "Configuring CloudEnv For CI/CD",
+    "content": " ",
+    "url": "http://localhost:4000/pages/tutorials/ci-cd.html",
+    "relUrl": "/pages/tutorials/ci-cd.html"
+  },"4": {
+    "doc": "CloudEnv CLI",
+    "title": "CloudEnv CLI",
+    "content": "Welcome, here’s how easy it is to get started with CloudEnv… . $ bash -c \"$(curl -fsSL https://raw.githubusercontent.com/cloudenvhq/install/main/install.sh)\" . Logging In . $ cloudenv login . Setting Up CloudEnv In A New App . $ cd /var/apps/sampleapp $ cloudenv init # this creates a secret 256-bit key for the project $ cloudenv push default .env # this encrypts your existing env vars into CloudEnv $ cloudenv push development .env.dev # this encrypts your development-specific env vars into CloudEnv $ cloudenv push staging .env.staging # this encrypts your staging-specific env vars into CloudEnv $ cloudenv push production .env.prod # this encrypts your production-specific env vars into CloudEnv $ cloudenv edit production # edit your env vars locally, as soon as you save, $ # they are encrypted and uploaded to CloudEnv $ # and instantly distributed to other team members and environments . ",
+    "url": "http://localhost:4000/pages/installation/cli.html",
+    "relUrl": "/pages/installation/cli.html"
+  },"5": {
+    "doc": "Configuring CloudEnv For Console",
+    "title": "Using CloudEnv to Manage Your Console Secrets",
+    "content": "You can use CloudEnv to store and manage your local environmental variables, not just your application variables. All you have to do is run cloudenv init inside your home directory and add cloudenv show to the source step in your shell profile. $ cd ~ $ cloudenv init . ",
+    "url": "http://localhost:4000/pages/tutorials/console.html#using-cloudenv-to-manage-your-console-secrets",
+    "relUrl": "/pages/tutorials/console.html#using-cloudenv-to-manage-your-console-secrets"
+  },"6": {
+    "doc": "Configuring CloudEnv For Console",
+    "title": "Bash CloudEnv",
+    "content": "echo 'env_file=`mktemp`' &gt;&gt; ~/.bash_profile echo 'cloudenv show &gt; $env_file' &gt;&gt; ~/bash_profile echo 'source $env_file' &gt;&gt; ~/bash_profile echo 'rm $env_file' &gt;&gt; ~/bash_profile . ",
+    "url": "http://localhost:4000/pages/tutorials/console.html#bash-cloudenv",
+    "relUrl": "/pages/tutorials/console.html#bash-cloudenv"
+  },"7": {
+    "doc": "Configuring CloudEnv For Console",
+    "title": "Zsh CloudEnv",
+    "content": "echo 'env_file=`mktemp`' &gt;&gt; ~/.zshrc echo 'cloudenv show &gt; $env_file' &gt;&gt; ~/.zshrc echo 'source $env_file' &gt;&gt; ~/.zshrc echo 'rm $env_file' &gt;&gt; ~/.zshrc . ",
+    "url": "http://localhost:4000/pages/tutorials/console.html#zsh-cloudenv",
+    "relUrl": "/pages/tutorials/console.html#zsh-cloudenv"
+  },"8": {
+    "doc": "Configuring CloudEnv For Console",
+    "title": "Configuring CloudEnv For Console",
+    "content": " ",
+    "url": "http://localhost:4000/pages/tutorials/console.html",
+    "relUrl": "/pages/tutorials/console.html"
+  },"9": {
+    "doc": "Configuring CloudEnv For Docker",
+    "title": "CloudEnv for Docker",
+    "content": " ",
+    "url": "http://localhost:4000/pages/tutorials/docker.html#cloudenv-for-docker",
+    "relUrl": "/pages/tutorials/docker.html#cloudenv-for-docker"
+  },"10": {
+    "doc": "Configuring CloudEnv For Docker",
+    "title": "Configuring CloudEnv For Docker",
+    "content": " ",
+    "url": "http://localhost:4000/pages/tutorials/docker.html",
+    "relUrl": "/pages/tutorials/docker.html"
+  },"11": {
+    "doc": "How CloudEnv Works",
+    "title": "How CloudEnv Works",
+    "content": " ",
+    "url": "http://localhost:4000/pages/overview/how_cloudenv_works.html",
+    "relUrl": "/pages/overview/how_cloudenv_works.html"
+  },"12": {
+    "doc": "Installation",
+    "title": "Installation",
+    "content": " ",
+    "url": "http://localhost:4000/docs/installation",
+    "relUrl": "/docs/installation"
+  },"13": {
+    "doc": "CloudEnv Node",
+    "title": "CloudEnv Node",
+    "content": "$ npm install cloudenv-hq --save . require(\"cloudenv-hq\") process.env.AWS_SECRET_ACCESS_KEY . ",
+    "url": "http://localhost:4000/pages/installation/node.html",
+    "relUrl": "/pages/installation/node.html"
+  },"14": {
+    "doc": "Overview",
+    "title": "Overview",
+    "content": " ",
+    "url": "http://localhost:4000/docs/overview",
+    "relUrl": "/docs/overview"
+  },"15": {
+    "doc": "API Permission Management",
+    "title": "API Permission Management",
+    "content": " ",
+    "url": "http://localhost:4000/pages/api/permissions.html",
+    "relUrl": "/pages/api/permissions.html"
+  },"16": {
+    "doc": "CloudEnv Python",
+    "title": "CloudEnv Python",
+    "content": "$ pip install cloudenv . import os import cloudenv cloudenv.load_cloudenv() os.getenv(\"AWS_SECRET_ACCESS_KEY\") . ",
+    "url": "http://localhost:4000/pages/installation/python.html",
+    "relUrl": "/pages/installation/python.html"
+  },"17": {
+    "doc": "CloudEnv Ruby",
+    "title": "CloudEnv Ruby",
+    "content": "$ gem install cloudenv-hq . gem \"cloudenv-hq\" require \"cloudenv-hq\" ENV.fetch(\"AWS_SECRET_ACCESS_KEY\") . ",
+    "url": "http://localhost:4000/pages/installation/ruby.html",
+    "relUrl": "/pages/installation/ruby.html"
+  },"18": {
+    "doc": "Tutorials",
+    "title": "Tutorials",
+    "content": " ",
+    "url": "http://localhost:4000/docs/tutorials",
+    "relUrl": "/docs/tutorials"
+  }
+}

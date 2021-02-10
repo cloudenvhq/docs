@@ -1,3 +1,10 @@
+---
+layout: default
+title: Welcome to CloudEnv
+nav_order: 1
+permalink: docs/
+---
+
 ## Welcome to CloudEnv
 
 Encrypted Secrets Management
