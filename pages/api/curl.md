@@ -35,5 +35,7 @@ You can also use the API to grab the data about the owner of the Bearer token.
 ```console
 $ bearer=`cat ~/.cloudenvrc`
 $ curl -s -H "Authorization: Bearer $bearer" "https://app.cloudenv.com/api/v1/me.json"
+
+{"id":123,"name":"Lucas Carlson","avatar_url":"https://secure.gravatar.com/avatar/c18da5373e..."}
 ```
 
