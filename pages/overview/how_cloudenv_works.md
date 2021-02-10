@@ -28,6 +28,18 @@ q2vfr70/izhNTw7SbgV4PxOIwluDgJSHJ9ScWnPCOxOnSE1IO5k8RSMqHh7hmjMS
 ...
 ```
 
+You need to pass this data through a simple `openssl` command in order to unscramble your secrets. 
+
+```console
+$ openssl enc -a -aes-256-cbc -md sha512 -d -pass pass:"$secretkey" -in "$encrypted_file"
+
+FOO=BAR
+DATABASE_PASSWORD=123
+AWS_SECRET_ACCESS_KEY=138ur83uf83f8h
+```
+
+The best part is that the `$secretkey` is never in our hands. We can't see your keys, so we can't see your secrets.
+
 ### CloudEnv Libraries
 
 We have built various client libraries that seamlessly grab the encrypted data, decrypt it with `openssl`, and load those variables into your typical environment variable access.
