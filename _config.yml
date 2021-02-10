@@ -13,3 +13,5 @@ gh_edit_branch: "main"
 gh_edit_view_mode: "edit"
 
 search_enabled: true
+
+url: "https://docs.cloudenv.com"
