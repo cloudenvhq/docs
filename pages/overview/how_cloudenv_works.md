@@ -40,6 +40,10 @@ AWS_SECRET_ACCESS_KEY=138ur83uf83f8h
 
 The best part is that the `$secretkey` is never in our hands. We can't see your keys, so we can't see your secrets.
 
+You can verify that this is true by looking at the first few lines of our CLI's open-source source code: [https://github.com/cloudenvhq/cli/blob/master/src/initialize.sh](https://github.com/cloudenvhq/cli/blob/master/src/initialize.sh)
+
+Once that code is on your machine, there is no way for us to change it or try to do anything malicious. Your secrets are auditably safe and secure.
+
 ### CloudEnv Libraries
 
 We have built various client libraries that seamlessly grab the encrypted data, decrypt it with `openssl`, and load those variables into your typical environment variable access.
