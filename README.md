@@ -7,36 +7,96 @@ permalink: /
 
 ## Welcome to CloudEnv
 
-Encrypted Secrets Management
+E2E Encrypted Secrets Management
 
-### Markdown
+### CloudEnv CLI
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Welcome, here's how easy it is to get started with CloudEnv...
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```console
+$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/cloudenvhq/install/main/install.sh)"
+$ cloudenv login
+$ cd /var/apps/sampleapp
+$ cloudenv init                         # this creates a secret 256-bit key for the project
+$ cloudenv push default .env            # this encrypts your existing env vars into CloudEnv
+$ cloudenv push development .env.dev    # this encrypts your development-specific env vars into CloudEnv
+$ cloudenv push staging .env.staging    # this encrypts your staging-specific env vars into CloudEnv
+$ cloudenv push production .env.prod    # this encrypts your production-specific env vars into CloudEnv
+$ cloudenv edit production              # edit your env vars locally, as soon as you save,
+$                                       #   they are encrypted and uploaded to CloudEnv
+$                                       #   and instantly distributed to other team members and environments
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Node CloudEnv
 
-### Jekyll Themes
+```console
+$ npm install cloudenv-hq --save
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cloudenvhq/docs.cloudenv.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```javascript
+require("cloudenv-hq")
 
-### Support or Contact
+process.env.AWS_SECRET_ACCESS_KEY
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[Read More]({% link installation/node.html %}) about how to use CloudEnv with Node.
+
+### Ruby CloudEnv
+
+```console
+$ gem install cloudenv-hq
+```
+
+```ruby
+gem "cloudenv-hq"
+require "cloudenv-hq"
+
+ENV.fetch("AWS_SECRET_ACCESS_KEY")
+```
+
+[Read More]({% link installation/ruby.html %}) about how to use CloudEnv with Ruby.
+
+### Python CloudEnv
+
+```console
+$ pip install cloudenv
+```
+
+```python
+import os
+import cloudenv
+cloudenv.load_cloudenv()
+
+os.getenv("AWS_SECRET_ACCESS_KEY")
+```
+
+[Read More]({% link installation/python.html %}) about how to use CloudEnv with Python.
+
+### Using CloudEnv to Manage Your Console Secrets
+
+You can use CloudEnv to store and manage your local environmental variables, not just your application variables. All you have to do is run `cloudenv init` inside your home directory and add `cloudenv show` to the source step in your shell profile.
+
+[Read More]({% link tutorials/console.html %}) about how to use CloudEnv with your console.
+
+```console
+$ cd ~
+$ cloudenv init
+```
+
+### Bash CloudEnv
+
+```console
+echo 'env_file=`mktemp`' >> ~/.bash_profile
+echo 'cloudenv show > $env_file' >> ~/bash_profile
+echo 'source $env_file' >> ~/bash_profile
+echo 'rm $env_file' >> ~/bash_profile
+```
+
+## Zsh CloudEnv
+
+```console
+echo 'env_file=`mktemp`' >> ~/.zshrc
+echo 'cloudenv show > $env_file' >> ~/.zshrc
+echo 'source $env_file' >> ~/.zshrc
+echo 'rm $env_file' >> ~/.zshrc
+```
