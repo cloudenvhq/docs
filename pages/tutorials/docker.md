@@ -21,4 +21,8 @@ First, [generated a new API token](https://app.cloudenv.com/api_tokens) in the C
 ```console
 $ docker-compose run -e CLOUDENV_BEARER_TOKEN=string-from-dashboard web python console.py
 ```
+### Important Note
 
+It is critical that the `.cloudenv-secret-key` file in the home directory of your application (which you get by running `cloudenv init` or from someone else on your team who has already run `cloudenv init`) is still in the home directory of your application inside your Docker container. That secret key can not be put into an environmental variable and should also never be checked into any source code repository.
+
+That file contains your encryption key and without it, your application can not decrypt the data received from CloudEnv's servers.
