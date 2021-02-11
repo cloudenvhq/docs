@@ -13,20 +13,14 @@ $ cd ~
 $ cloudenv init
 ```
 
-## Bash CloudEnv
+## CloudEnv Shell
+
+You can add this to your `.bash_profile` or `.zshrc` file:
 
 ```console
-echo 'env_file=`mktemp`' >> ~/.bash_profile
-echo 'cloudenv show > $env_file' >> ~/bash_profile
-echo 'source $env_file' >> ~/bash_profile
-echo 'rm $env_file' >> ~/bash_profile
+envvars=`mktemp`
+cloudenv show > $envvars
+source $envvars
+rm $envvars
 ```
 
-## Zsh CloudEnv
-
-```console
-echo 'env_file=`mktemp`' >> ~/.zshrc
-echo 'cloudenv show > $env_file' >> ~/.zshrc
-echo 'source $env_file' >> ~/.zshrc
-echo 'rm $env_file' >> ~/.zshrc
-```
