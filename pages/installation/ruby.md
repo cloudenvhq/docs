@@ -38,7 +38,6 @@ So the next step is initializing the app:
 
 ```console
 $ cloudenv init
-
 Name of App: rubytest
 
 ==> SUCCESS: You have created the app 'rubytest' in CloudEnv. Try the following command next:
@@ -54,7 +53,6 @@ And now you can modify your environmental variables using `cloudenv edit`
 
 ```console
 $ cloudenv edit
-
 FOO=bar
 ```
 
