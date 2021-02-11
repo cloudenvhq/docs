@@ -30,6 +30,7 @@ But if you run this now you would get a strange result:
 
 ```console
 $ node hello.js
+undefined
 ```
 
 That's because we haven't created the CloudEnv environment variable yet.
