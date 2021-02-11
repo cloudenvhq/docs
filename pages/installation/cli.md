@@ -37,6 +37,8 @@ https://app.cloudenv.com/cli/afdf2ed31563?verify=378f0d563afe
 
 ### Setting Up CloudEnv In A New App
 
+The first time you use CloudEnv in an app, you will need to run `cloudenv init` in order to create a record of the app in the CloudEnv servers and initialize the secret encryption key on your machine in the `.cloudenv-secret-key` file. Here's what that process looks like:
+
 ```console
 $ cd /var/apps/sampleapp
 $ cloudenv init
