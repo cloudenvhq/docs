@@ -15,8 +15,24 @@ $ bash -c "$(curl -fsSL https://raw.githubusercontent.com/cloudenvhq/install/mai
 
 ### Logging In
 
+Here's an example of what the full login process looks like:
+
 ```console
 $ cloudenv login
+
+==> Your current ip address is 2703:8010:3802:fd10:4cbf:4619:7e8b:3fcf
+
+Do you want to firewall this API token to this IP address (enhanced security on servers)? (N/y): y
+
+
+==> CloudEnv can prevent writes from this computer
+
+Do you want this API token to be read-only? (N/y): n
+
+
+==> Please visit this url and login or register to authorize this computer: 
+
+https://app.cloudenv.com/cli/afdf2ed31563?verify=378f0d563afe
 ```
 
 ### Setting Up CloudEnv In A New App
