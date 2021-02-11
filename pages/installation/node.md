@@ -47,7 +47,7 @@ EDITOR=nano cloudenv edit
 
 ==> REMEMBER: You need to distribute the following file to all your team members and deployment servers
 
-/home/lucas/pythontest/.cloudenv-secret-key
+/home/lucas/nodetest/.cloudenv-secret-key
 ```
 
 And now you can modify your environmental variables using `cloudenv edit`
