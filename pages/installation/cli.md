@@ -64,11 +64,16 @@ secret-key: GXWaeMkjqChq5Tt2MNVYJnkdwoFNakXd2JaXDL7nYNHJ4UvXdJx36RHmzY2ueGarNUkn
 ### Editing Your Environmental Variables
 
 ```console
+$ cloudenv edit                         # this defaults to the default environment
+$ cloudenv edit development             # in case you want to change only the development variables
+$ cloudenv edit production              # in case you want to change only the production variables
+```
+
+### Importing Existing Environmental Variables
+
+```console
 $ cloudenv push default .env            # this encrypts your existing env vars into CloudEnv
 $ cloudenv push development .env.dev    # this encrypts your development-specific env vars into CloudEnv
 $ cloudenv push staging .env.staging    # this encrypts your staging-specific env vars into CloudEnv
 $ cloudenv push production .env.prod    # this encrypts your production-specific env vars into CloudEnv
-$ cloudenv edit production              # edit your env vars locally, as soon as you save,
-$                                       #   they are encrypted and uploaded to CloudEnv
-$                                       #   and instantly distributed to other team members and environments
 ```
