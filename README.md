@@ -9,6 +9,12 @@ permalink: /
 
 E2E Encrypted Secrets Management
 
+Are you tired of sharing environmental variables over email and Slack?
+
+Are solutions like Vault too complicated and 1Password too clunky?
+
+Sync your secrets with [CloudEnv](httsp://cloudenv.com), the easiest and most secure secret management platform there is.
+
 ### CloudEnv CLI
 
 Welcome, here's how easy it is to get started with CloudEnv...
@@ -83,20 +89,12 @@ $ cd ~
 $ cloudenv init
 ```
 
-### Bash CloudEnv
+Then you can add this to your `.bash_profile` or `.zshrc` file:
 
 ```console
-echo 'env_file=`mktemp`' >> ~/.bash_profile
-echo 'cloudenv show > $env_file' >> ~/bash_profile
-echo 'source $env_file' >> ~/bash_profile
-echo 'rm $env_file' >> ~/bash_profile
+envvars=`mktemp`
+cloudenv show > $envvars
+source $envvars
+rm $envvars
 ```
 
-## Zsh CloudEnv
-
-```console
-echo 'env_file=`mktemp`' >> ~/.zshrc
-echo 'cloudenv show > $env_file' >> ~/.zshrc
-echo 'source $env_file' >> ~/.zshrc
-echo 'rm $env_file' >> ~/.zshrc
-```
