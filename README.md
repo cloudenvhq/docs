@@ -33,6 +33,14 @@ $                                       #   they are encrypted and uploaded to C
 $                                       #   and instantly distributed to other team members and environments
 ```
 
+### CloudEnv Universal Integration
+
+```console
+$ eval $(cloudenv source) && path/to/start/command
+```
+
+[Read More](pages/installation/universal.html) about how to use CloudEnv with anything.
+
 ### CloudEnv Node Integration
 
 ```console
@@ -92,9 +100,6 @@ $ cloudenv init
 Then you can add this to your `.bash_profile` or `.zshrc` file:
 
 ```console
-envvars=`mktemp`
-cloudenv show > $envvars
-source $envvars
-rm $envvars
+eval $(cloudenv source)
 ```
 
