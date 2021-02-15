@@ -16,5 +16,5 @@ search_enabled: true
 url: "https://docs.cloudenv.com"
 
 aux_links:
-  "Sign Up Now":
-    - "https://app.cloudenv.com/users/sign_up"
+  "Back to CloudEnv.com":
+    - "https://app.cloudenv.com/"
