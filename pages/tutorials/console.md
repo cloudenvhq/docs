@@ -18,9 +18,6 @@ $ cloudenv init
 You can add this to your `.bash_profile` or `.zshrc` file:
 
 ```console
-envvars=`mktemp`
-cloudenv show > $envvars
-source $envvars
-rm $envvars
+eval $(cloudenv source)
 ```
 
