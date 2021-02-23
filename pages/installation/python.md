@@ -48,13 +48,9 @@ So the next step is initializing the app:
 ```console
 $ cloudenv init
 Name of App: pythontest
-
 ==> SUCCESS: You have created the app 'pythontest' in CloudEnv. Try the following command next:
-
 EDITOR=nano cloudenv edit
-
 ==> REMEMBER: You need to distribute the following file to all your team members and deployment servers
-
 /home/lucas/pythontest/.cloudenv-secret-key
 ```
 
