@@ -18,6 +18,12 @@ Or if you are using Python 3, you might try this command:
 $ pip3 install cloudenv
 ```
 
+On Mac OS X, you might need to run this command:
+
+```console
+$ python3 -m pip install --user cloudenv
+```
+
 Here is an example of a simple `hello.py` file you could use to test CloudEnv with.
 
 ```python
