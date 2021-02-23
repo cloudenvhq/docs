@@ -40,13 +40,9 @@ So the next step is initializing the app:
 ```console
 $ cloudenv init
 Name of App: nodetest
-
 ==> SUCCESS: You have created the app 'nodetest' in CloudEnv. Try the following command next:
-
 EDITOR=nano cloudenv edit
-
 ==> REMEMBER: You need to distribute the following file to all your team members and deployment servers
-
 /home/lucas/nodetest/.cloudenv-secret-key
 ```
 
