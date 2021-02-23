@@ -39,13 +39,9 @@ So the next step is initializing the app:
 ```console
 $ cloudenv init
 Name of App: rubytest
-
 ==> SUCCESS: You have created the app 'rubytest' in CloudEnv. Try the following command next:
-
 EDITOR=nano cloudenv edit
-
 ==> REMEMBER: You need to distribute the following file to all your team members and deployment servers
-
 /home/lucas/rubytest/.cloudenv-secret-key
 ```
 
