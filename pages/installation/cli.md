@@ -19,19 +19,11 @@ Here's an example of what the full login process looks like:
 
 ```console
 $ cloudenv login
-
 ==> Your current ip address is 2703:8010:3802:fd10:4cbf:4619:7e8b:3fcf
-
 Do you want to firewall this API token to this IP address (enhanced security on servers)? (N/y): y
-
-
 ==> CloudEnv can prevent writes from this computer
-
 Do you want this API token to be read-only? (N/y): n
-
-
 ==> Please visit this url and login or register to authorize this computer: 
-
 https://app.cloudenv.com/cli/afdf2ed31563?verify=378f0d563afe
 ```
 
@@ -43,13 +35,9 @@ The first time you use CloudEnv in an app, you will need to run `cloudenv init` 
 $ cd /var/apps/sampleapp
 $ cloudenv init
 Name of App: nodetest
-
 ==> SUCCESS: You have created the app 'nodetest' in CloudEnv. Try the following command next:
-
 EDITOR=nano cloudenv edit
-
 ==> REMEMBER: You need to distribute the following file to all your team members and deployment servers
-
 /home/lucas/nodetest/.cloudenv-secret-key
 ```
 
