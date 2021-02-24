@@ -8,7 +8,7 @@ parent: Installation
 
 Watch this screencast:
 
-<asciinema-player src="/casts/python.cast" rows="25" loop></asciinema-player>
+<asciinema-player src="/casts/python.cast" rows="25"></asciinema-player>
 
 Installing CloudEnv's Python Library is easy.
 
