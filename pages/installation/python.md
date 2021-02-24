@@ -6,6 +6,10 @@ parent: Installation
 
 ## CloudEnv Python
 
+Watch this screencast:
+
+<asciinema-player src="/casts/python.cast" rows="25" loop></asciinema-player>
+
 Installing CloudEnv's Python Library is easy.
 
 ```console
