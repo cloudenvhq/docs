@@ -8,9 +8,9 @@ parent: Tutorials
 
 CloudEnv usually uses a file stored in `~/.cloudenvrc` to get access to the [API token](/pages/api/bearer-token.html). That file is created when you run the `cloudenv login` command using the [CloudEnv CLI](/pages/installation/cli.html).
 
-But when deploying through CI/CD, it might be run on a server which does not have that file and did not run `cloudenv login`.
+But when deploying through CI/CD, it may not have access to files that are not checked into the source code repository.
 
-When that is the case, you can use the `CLOUDENV_BEARER_TOKEN` environmental variable to store the [API token](/pages/api/bearer-token.html) instead.
+In that case, you can use environmental variables to store the [API token](/pages/api/bearer-token.html) and security key instead.
 
 ### Example Configuration for Jenkins
 
@@ -22,7 +22,9 @@ pipeline {
         // Define agent details here
     }
     environment {
-        CLOUDENV_BEARER_TOKEN = '... Token generated from https://app.cloudenv.com/api_tokens ...'
+        CLOUDENV_BEARER_TOKEN = '... Token generated from https://app.cloudenv.com/api_tokens ...',
+        CLOUDENV_APP_SLUG = '... app name slug ...',
+        CLOUDENV_APP_SECRET_KEY = '... app secret encryption key ...',
     }
     stages {
         stage('Example stage 1') {
