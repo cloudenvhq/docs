@@ -19,7 +19,7 @@ There are many ways to [configure environmental variables in Docker](https://doc
 First, [generated a new API token](https://app.cloudenv.com/api_tokens) in the CloudEnv dashboard for use in Docker.
 
 ```console
-$ docker-compose run -e CLOUDENV_BEARER_TOKEN=string-from-dashboard web python console.py
+$ docker-compose run -e CLOUDENV_BEARER_TOKEN=string-from-dashboard CLOUDENV_APP_SLUG=app-name CLOUDENV_APP_SECRET_KEY=encryption-key web python console.py
 ```
 ### Important Note
 
